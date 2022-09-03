@@ -26,8 +26,6 @@ basedir = os.getcwd()
 
 files = []
 
-print(args)
-
 for parent, dirnames, filenames in os.walk(basedir):
     
     files_path = [os.path.join(parent,file).replace(basedir + '\\',"") for file in filenames]
